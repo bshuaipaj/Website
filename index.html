@@ -14,26 +14,57 @@
   </header>
 
   <main>
-  	<h1>Caesar Cipher</h1>
-    <p>The Caesar Cipher is a very simple way to encrypt your messages. And in this entry, I'll explain how. First, imagine you want to encrypt the following message:</p>
-    <p class="notice">the quick brown fox jumped over the lazy dog</p>
+  	<h1>Substitution Cipher</h1>
+    <p>The Substitution Cipher is a very simple way to encrypt your messages.
+      And in this entry, I'll explain how.
+      First, imagine you want to encrypt the following message:</p>
+    <p class="notice">Be sure to drink your Ovaltine</p>
     
     <p>In this unencrypted (plaintext) message each of its letters map to the same letter.</p>
     <p class="notice">
-      A->A <br>
-      B->B <br>
-      C->C <br>
-      D->D <br>
-      E->E <br>
-      ...
+      A&equiv;A <br>
+      B&equiv;B <br>
+      C&equiv;C <br>
+      D&equiv;D <br>
+      E&equiv;E <br>
+      ... <br>
+      ... <br>
+      ... <br>
+      Z&equiv;Z <br>
     </p>
-  
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6_XSShVAnkY?si=BaPmlyAvWMUUtKck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <img src="Images/decoder-ring.jpg" alt="">
-    <p>Image taken from "A Christmas Story" (1983)</p>
-  
-  
-  
+    
+    <p>Now lets replace the letters on the right side with numbers.
+      We are going to need 26 different letters because there are 26 letters in the English alphabet.
+      Lets just use the integers from 1 to 26 (inclusive).
+      Now our mapping looks like this:
+    </p>
+    <p class="notice">
+      A&equiv;1 <br>
+      B&equiv;2 <br>
+      C&equiv;3 <br>
+      D&equiv;4 <br>
+      E&equiv;5 <br>
+      ... <br>
+      ... <br>
+      ... <br>
+      Z&equiv;26 <br>
+    </p>
+    
+    <p>Now by replacing the letters in our original message with their number equivalent (make sure to leave a space between adjacent numbers), our message looks like this:</p>
+  </p>
+  <p class="notice">
+    2 5 &nbsp;&nbsp;&nbsp;19 21 18 5&nbsp;&nbsp;&nbsp; 20 15&nbsp;&nbsp;&nbsp; 4 18 9 14 11&nbsp;&nbsp;&nbsp; 25 15 21 18 &nbsp;&nbsp;&nbsp;15 22 1 12 20 9 14 5
+  </p>
+    
+  <p>Now this looks pretty encrypted to a passerby, but a determined person would probably try to decrypt this string of numbers by using the mapping scheme of A&equiv;1, B&equiv;2, C&equiv;3, ... because it is in the order of the alphabet. 
+    This can be made much safer if you use a random mapping of numbers instead of count up from A to Z.
+  This is what the "Little Orphan Annie's Secret Society" decoder pin did.
+It was a pin that on its rim had a random mapping of letters to numbers.</p>
+
+<img src="Images/decoder-ring.jpg" alt="">
+<p><cite>-Image taken from "A Christmas Story" (1983)</cite></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6_XSShVAnkY?si=BaPmlyAvWMUUtKck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><cite>-Video taken from TBS</cite></p>
   
   
   </main>
